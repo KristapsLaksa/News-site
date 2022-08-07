@@ -17,7 +17,7 @@ class NewsApiRepository implements NewsRepository
         $apiKey =$_ENV['NEWS_API_KEY'];
 
         $client = new \GuzzleHttp\Client();
-        $response = $client->request('GET', "https://newsapi.org/v2/top-headlines?country=lv&apiKey=$apiKey");
+        $response = $client->request('GET', "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=$apiKey");
         $newsHeadlines = json_decode($response->getBody());
 
         $news = [];
