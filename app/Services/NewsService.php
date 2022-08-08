@@ -18,9 +18,9 @@ class  NewsService
     /**
      * @throws GuzzleException
      */
-    public function execute(): array
+    public function execute(string $category): array
     {
-        return $this->newsApiRepository->getTopHeadlines();
+        return $this->newsApiRepository->getTopHeadlines($category);
     }
 
 

@@ -21,10 +21,10 @@ class NewsController
     /**
      * @throws GuzzleException
      */
-    public function show():View
+    public function show(string $category):View
     {
 
-        return new View('news-show.twig',['report'=>$this->service->execute()]);
+        return new View('news-show.twig',['report'=>$this->service->execute($category)]);
 
     }
 

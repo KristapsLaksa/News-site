@@ -11,13 +11,13 @@ class NewsApiRepository implements NewsRepository
     /**
      * @throws GuzzleException
      */
-    public function getTopHeadlines(): array
+    public function getTopHeadlines(string $category): array
     {
 
         $apiKey =$_ENV['NEWS_API_KEY'];
 
         $client = new \GuzzleHttp\Client();
-        $response = $client->request('GET', "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=$apiKey");
+        $response = $client->request('GET', "https://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=$apiKey");
         $newsHeadlines = json_decode($response->getBody());
 
         $news = [];

@@ -4,6 +4,6 @@ namespace App\Repositories;
 
 interface NewsRepository
 {
-public function getTopHeadlines():array;
+public function getTopHeadlines(string $category):array;
 
 }
