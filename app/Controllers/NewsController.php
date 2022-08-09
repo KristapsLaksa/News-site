@@ -13,20 +13,34 @@ class NewsController
 
     private NewsService $service;
 
-    public function __construct(NewsService $service)
+
+    public function __construct(
+        NewsService $service
+
+    )
     {
         $this->service = $service;
+
     }
 
     /**
      * @throws GuzzleException
      */
-    public function show(string $category):View
+    public function show(string $category): View
     {
 
-        return new View('news-show.twig',['report'=>$this->service->execute($category)]);
+        return new View('news-show.twig', ['report' => $this->service->execute($category)]);
 
     }
+
+    public function create(): view
+    {
+        return new View('submit-news-form.twig');
+    }
+
+
+
+
 
 
 }

@@ -32,4 +32,6 @@ class NewsApiRepository implements NewsRepository
         }
         return $news;
     }
+
+
 }
