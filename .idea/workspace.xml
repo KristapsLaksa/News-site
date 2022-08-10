@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6429a70-97f3-47e6-bb94-7527d68ab58d" name="Changes" comment="View update">
+    <list default="true" id="b6429a70-97f3-47e6-bb94-7527d68ab58d" name="Changes" comment="Save data">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/NewsApiRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/NewsApiRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/NewsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/NewsRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/NewsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/NewsService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/submit-news-form.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/submit-news-form.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/NewsSubmitRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/NewsSubmitRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/news-show.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/news-show.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +166,7 @@
       <workItem from="1660034379769" duration="466000" />
       <workItem from="1660039764811" duration="639000" />
       <workItem from="1660125247777" duration="1345000" />
-      <workItem from="1660145067055" duration="15578000" />
+      <workItem from="1660145067055" duration="17534000" />
     </task>
     <task id="LOCAL-00001" summary="View update">
       <created>1659825558080</created>
@@ -190,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660027861857</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Save data">
+      <created>1660165329996</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660165329996</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Save data">
+      <created>1660165496524</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660165496524</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +228,8 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="View update" />
-    <option name="LAST_COMMIT_MESSAGE" value="View update" />
+    <MESSAGE value="Save data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

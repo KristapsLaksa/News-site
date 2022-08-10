@@ -9,11 +9,11 @@ class NewsSubmitRepository implements NewsRepository
     {
         $data = [
             [
-                $_POST[$news->getTitle()],
-                $_POST[$news->getDescription()],
-                $_POST[$news->getAuthor()],
-                $_POST[$news->getUrlToImage()],
-                $_POST[$news->getUrl()],
+                $news->getTitle(),
+               $news->getDescription(),
+               $news->getAuthor(),
+               $news->getUrlToImage(),
+               $news->getUrl(),
 
             ]
         ];

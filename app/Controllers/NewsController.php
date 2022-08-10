@@ -24,7 +24,6 @@ class NewsController
     )
     {
         $this->service = $service;
-
         $this->submitNewsService = $submitNewsService;
     }
 
@@ -48,11 +47,11 @@ class NewsController
     {
         $this->submitNewsService->execute(
             new SubmitNewsServiceRequest(
-                'title',
-                'description',
-                'author',
-                'url',
-                'urlToImage'
+                $_POST['title'],
+                $_POST['description'],
+                $_POST['author'],
+                $_POST['url'],
+                $_POST['urlToImage']
             )
         );
         header('Location:/');
