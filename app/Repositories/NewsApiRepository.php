@@ -32,6 +32,9 @@ class NewsApiRepository implements NewsRepository
         }
         return $news;
     }
-
+public function storeNews(News $news): void
+{
+    // TODO: Implement storeNews() method.
+}
 
 }

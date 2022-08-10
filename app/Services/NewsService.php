@@ -10,7 +10,7 @@ class  NewsService
 {
     private NewsApiRepository $newsApiRepository;
 
-    public function __construct(NewsRepository $newsRepository)
+    public function __construct(NewsApiRepository $newsRepository)
     {
         $this->newsApiRepository = $newsRepository;
     }

@@ -12,6 +12,9 @@ $dotenv->load();
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/', 'App\Controllers\NewsController@show');
 
+    $r->addRoute('GET', '/submit', 'App\Controllers\NewsController@create');
+    $r->addRoute('POST', '/submit', 'App\Controllers\NewsController@store');
+
 });
 
 // Fetch method and URI from somewhere
@@ -42,7 +45,6 @@ switch ($routeInfo[0]) {
         $loader = new \Twig\Loader\FilesystemLoader('app/Views');
         $twig = new \Twig\Environment($loader);
 
-        //$service = new NewsService(new \App\Repositories\NewsApiRepository());
 
         $container = new DI\Container();
         $container->set(\App\Repositories\NewsRepository::class, DI\create(\App\Repositories\NewsApiRepository::class));

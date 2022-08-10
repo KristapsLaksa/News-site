@@ -5,6 +5,8 @@ namespace App\Controllers;
 
 use App\Repositories\NewsApiRepository;
 use App\Services\NewsService;
+use App\Services\SubmitNewsService;
+use App\Services\SubmitNewsServiceRequest;
 use App\Views\View;
 use GuzzleHttp\Exception\GuzzleException;
 
@@ -12,15 +14,18 @@ class NewsController
 {
 
     private NewsService $service;
+    private SubmitNewsService $submitNewsService;
 
 
     public function __construct(
-        NewsService $service
+        NewsService       $service,
+        SubmitNewsService $submitNewsService
 
     )
     {
         $this->service = $service;
 
+        $this->submitNewsService = $submitNewsService;
     }
 
     /**
@@ -33,14 +38,25 @@ class NewsController
 
     }
 
-    public function create(): view
+    public function create(): View
     {
         return new View('submit-news-form.twig');
+
     }
 
-
-
-
+    public function store(): void
+    {
+        $this->submitNewsService->execute(
+            new SubmitNewsServiceRequest(
+                'title',
+                'description',
+                'author',
+                'url',
+                'urlToImage'
+            )
+        );
+        header('Location:/');
+    }
 
 
 }

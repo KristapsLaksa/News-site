@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<title>Submit Form</title>
+    <title>Submit Form</title>
 </head>
 <body>
 <form method="post" action="/submit">
@@ -19,7 +19,7 @@
     >
     <br>
     <br>
-    <label for="Description" >
+    <label for="Description">
         Description
     </label>
     <br>
@@ -28,10 +28,10 @@
             name="description"
             id="description"
             placeholder="Description"
-
+            required
 
     >
-<br>
+    <br>
     <br>
     <label for="author">
         Author, Name/Surname
@@ -42,11 +42,45 @@
             name="author"
             id="author"
             placeholder="Name Surname"
+            required
     >
     <br>
     <br>
+
+    <label for="urltoImage">
+        Image URL
+    </label>
+    <br>
+    <label for="urlToImage"></label><input
+            type="url"
+            name="urlToImage"
+            id="urlToImage"
+            placeholder="Image URL"
+
+
+    >
+    <br>
+    <br>
+
+    <label for="url">
+        URL
+    </label>
+    <br>
+    <label for="url"></label><input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="URL"
+
+
+    >
+    <br>
+    <br>
+
+
+
     <label>
-        <button> <a href="/" >Submit</a></button>
+        <button type="submit">Submit</button>
     </label>
 </form>
 
