@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6429a70-97f3-47e6-bb94-7527d68ab58d" name="Changes" comment="Save data">
+      <change afterPath="$PROJECT_DIR$/app/Repositories/NewsUserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/NewsUserService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Views/style-submit-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/News.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/News.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6276763-2379-4cef-af64-bf9072ec499b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6276763-2379-4cef-af64-bf9072ec499b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6276763-2379-4cef-af64-bf9072ec499b/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6276763-2379-4cef-af64-bf9072ec499b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/NewsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/NewsSubmitRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/NewsSubmitRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/news-show.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/news-show.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/submit-news-form.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/submit-news-form.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +121,11 @@
       <path value="$PROJECT_DIR$/vendor/php-di/phpdoc-reader" />
       <path value="$PROJECT_DIR$/vendor/php-di/invoker" />
       <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
     </include_path>
   </component>
   <component name="ProjectId" id="2CKgh2BvgD8UXWRpjdfKRux7REh" />
@@ -122,7 +144,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/codebuntu/PhpstormProjects/job-seek&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/codebuntu/PhpstormProjects/News&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
@@ -166,7 +188,9 @@
       <workItem from="1660034379769" duration="466000" />
       <workItem from="1660039764811" duration="639000" />
       <workItem from="1660125247777" duration="1345000" />
-      <workItem from="1660145067055" duration="17534000" />
+      <workItem from="1660145067055" duration="37753000" />
+      <workItem from="1660210045647" duration="13028000" />
+      <workItem from="1660244287942" duration="9409000" />
     </task>
     <task id="LOCAL-00001" summary="View update">
       <created>1659825558080</created>
@@ -203,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660165496524</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Save data">
+      <created>1660167357849</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660167357849</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

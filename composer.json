@@ -12,7 +12,8 @@
     "guzzlehttp/guzzle": "^7.4",
     "vlucas/phpdotenv": "^5.4",
     "pestphp/pest": "^1.21",
-    "php-di/php-di": "^6.4"
+    "php-di/php-di": "^6.4",
+    "doctrine/dbal": "^3.4"
 
   },
   "config": {

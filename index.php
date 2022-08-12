@@ -15,7 +15,7 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
     $r->addRoute('GET', '/submit', 'App\Controllers\NewsController@create');
     $r->addRoute('POST', '/submit', 'App\Controllers\NewsController@store');
 
-    $r->addRoute('GET', '/user', 'App\Controllers\NewsController@show');
+    $r->addRoute('GET', '/user', 'App\Controllers\NewsController@showUser');
 
 });
 
